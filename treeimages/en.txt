@@ -1,0 +1,137 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-arrow_close {
+    width: 16px;
+    height: 13px;
+    background-position: -5px -5px;
+}
+
+.sprite-arrow_open {
+    width: 16px;
+    height: 13px;
+    background-position: -31px -5px;
+}
+
+.sprite-check {
+    width: 16px;
+    height: 16px;
+    background-position: -57px -5px;
+}
+
+.sprite-context-menu-gradient {
+    width: 24px;
+    height: 10px;
+    background-position: -83px -5px;
+}
+
+.sprite-dhtmlgoodies_sheet {
+    width: 16px;
+    height: 16px;
+    background-position: -83px -25px;
+}
+
+.sprite-dragDrop_ind1 {
+    width: 15px;
+    height: 6px;
+    background-position: -5px -51px;
+}
+
+.sprite-dragDrop_ind2 {
+    width: 15px;
+    height: 6px;
+    background-position: -30px -51px;
+}
+
+.sprite-folder {
+    width: 16px;
+    height: 13px;
+    background-position: -55px -51px;
+}
+
+.sprite-folder_close {
+    width: 16px;
+    height: 20px;
+    background-position: -81px -51px;
+}
+
+.sprite-folder_dots {
+    width: 16px;
+    height: 20px;
+    background-position: -5px -81px;
+}
+
+.sprite-folder_end {
+    width: 16px;
+    height: 13px;
+    background-position: -31px -81px;
+}
+
+.sprite-folder_folder {
+    width: 16px;
+    height: 13px;
+    background-position: -57px -81px;
+}
+
+.sprite-folder_found {
+    width: 16px;
+    height: 13px;
+    background-position: -83px -81px;
+}
+
+.sprite-folder_lastsub {
+    width: 16px;
+    height: 20px;
+    background-position: -117px -5px;
+}
+
+.sprite-folder_open {
+    width: 16px;
+    height: 20px;
+    background-position: -109px -35px;
+}
+
+.sprite-folder_sub {
+    width: 16px;
+    height: 20px;
+    background-position: -109px -65px;
+}
+
+.sprite-found_arrow {
+    width: 16px;
+    height: 16px;
+    background-position: -109px -95px;
+}
+
+.sprite-loader_arrow {
+    width: 16px;
+    height: 16px;
+    background-position: -5px -121px;
+}
+
+.sprite-minus {
+    width: 18px;
+    height: 13px;
+    background-position: -31px -121px;
+}
+
+.sprite-new_window {
+    width: 13px;
+    height: 13px;
+    background-position: -59px -121px;
+}
+
+.sprite-nodata {
+    width: 16px;
+    height: 16px;
+    background-position: -82px -121px;
+}
+
+.sprite-plus {
+    width: 18px;
+    height: 13px;
+    background-position: -108px -121px;
+}

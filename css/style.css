@@ -1,0 +1,324 @@
+.parent-element {
+      background:url(treeimages/treeimages.png);
+}
+.enfloat
+{
+   float: left;  
+}
+.arfloat{
+    float: right;   
+}
+.endirection
+{
+   direction: ltr;  
+}
+.ardirection
+{
+    direction:rtl; 
+}
+.dynamictree
+{
+    padding: 5px;
+}
+
+.dynamictree ul {
+    
+    display: block;
+	
+}
+
+.dynamictree li {
+	 display: block;
+     cursor: pointer;
+     padding-top: 10px;
+     clear: both;
+}
+
+/*.dynamictree a
+{
+   font-family: Tahoma,Arabic Transparent;
+   font-size: 16px;
+	font-weight:normal;
+	color: #000000;
+    text-decoration: none;
+}*/
+
+.dynamictree li a{
+    
+	
+	padding: 5px 10px;
+    text-decoration: none;
+	color: #666;
+	font-family: arial, verdana, tahoma;
+	font-size: 12px;
+	
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+/*hover effects*/
+/*hover effect the the lineage of the element also*/
+.dynamictree li a:hover, .hierarchy li a:hover+ul li a {
+	background: #c8e4f8; color: #000;
+}
+
+
+.nodeimg
+{
+   background-position: 0px 0px; 
+   background:url(../treeimages/treeimages.png);
+   background-repeat: no-repeat;
+   width: 16px;
+   height: 13px;
+}
+
+.dyanamictree {
+    background-image: url(../treeimages/treeimages_en.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.dyanamictree_ar {
+    background-image: url(../treeimages/treeimages_ar.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.dyanamictree-arrow_close {
+    width: 16px;
+    height: 13px;
+    background-position: -5px -5px;
+}
+
+.dyanamictree-arrow_open {
+    width: 16px;
+    height: 13px;
+    background-position: -31px -5px;
+}
+
+.dyanamictree-check {
+    width: 16px;
+    height: 16px;
+    background-position: -57px -5px;
+}
+
+.dyanamictree-context-menu-gradient {
+    width: 24px;
+    height: 10px;
+    background-position: -83px -5px;
+}
+
+.dyanamictree-dhtmlgoodies_sheet {
+    width: 16px;
+    height: 16px;
+    background-position: -83px -25px;
+}
+
+.dyanamictree-dragDrop_ind1 {
+    width: 15px;
+    height: 6px;
+    background-position: -5px -51px;
+}
+
+.dyanamictree-dragDrop_ind2 {
+    width: 15px;
+    height: 6px;
+    background-position: -30px -51px;
+}
+
+.dyanamictree-folder {
+    width: 16px;
+    height: 13px;
+    background-position: -55px -51px;
+}
+
+.dyanamictree-folder_close {
+    width: 16px;
+    height: 20px;
+    background-position: -81px -51px;
+}
+
+.dyanamictree-folder_dots {
+    width: 16px;
+    height: 20px;
+    background-position: -5px -81px;
+}
+
+.dyanamictree-folder_end {
+    width: 16px;
+    height: 13px;
+    background-position: -31px -81px;
+}
+
+.dyanamictree-folder_folder {
+    width: 16px;
+    height: 13px;
+    background-position: -57px -81px;
+}
+
+.dyanamictree-folder_found {
+    width: 16px;
+    height: 13px;
+    background-position: -83px -81px;
+}
+
+.dyanamictree-folder_lastsub {
+    width: 16px;
+    height: 20px;
+    background-position: -117px -5px;
+}
+
+.dyanamictree-folder_open {
+    width: 16px;
+    height: 20px;
+    background-position: -109px -35px;
+}
+
+.dyanamictree-folder_sub {
+    width: 16px;
+    height: 20px;
+    background-position: -109px -65px;
+}
+
+.dyanamictree-found_arrow {
+    width: 16px;
+    height: 16px;
+    background-position: -109px -95px;
+}
+
+.dyanamictree-loader_arrow {
+    width: 16px;
+    height: 16px;
+    background-position: -5px -121px;
+}
+
+.dyanamictree-minus {
+    width: 18px;
+    height: 13px;
+    background-position: -31px -121px;
+}
+
+.dyanamictree-new_window {
+    width: 13px;
+    height: 13px;
+    background-position: -59px -121px;
+}
+
+.dyanamictree-nodata {
+    width: 16px;
+    height: 16px;
+    background-position: -82px -121px;
+}
+
+.dyanamictree-plus {
+    width: 18px;
+    height: 13px;
+    background-position: -108px -121px;
+}
+
+
+
+/************  Hierarchical  **********************/
+
+* {margin: 0; padding: 0;}
+
+.hierarchy ul {
+	padding-top: 20px; position: relative;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+.hierarchy li {
+    float: left;
+	text-align: center;
+	list-style-type: none;
+	position: relative;
+	padding: 20px 5px 0 5px;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+/*We will use ::before and ::after to draw the connectors*/
+
+.hierarchy li::before, .hierarchy li::after{
+	content: '';
+	position: absolute; top: 0; right: 50%;
+	border-top: 1px solid #ccc;
+	width: 50%; height: 20px;
+}
+.hierarchy li::after{
+	right: auto; left: 50%;
+	border-left: 1px solid #ccc;
+}
+
+/* remove left-right connectors from elements without 
+any siblings*/
+.hierarchy li:only-child::after, .hierarchy li:only-child::before {
+	display: none;
+}
+
+/*Remove space from the top of single children*/
+.hierarchy li:only-child{ padding-top: 0;}
+
+/*Remove left connector from first child and 
+right connector from last child*/
+.hierarchy li:first-child::before, .hierarchy li:last-child::after{
+	border: 0 none;
+}
+/*Adding back the vertical connector to the last nodes*/
+.hierarchy li:last-child::before{
+	border-right: 1px solid #ccc;
+	border-radius: 0 5px 0 0;
+	-webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+}
+.hierarchy li:first-child::after{
+	border-radius: 5px 0 0 0;
+	-webkit-border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+}
+
+/*Time to add downward connectors from parents*/
+.hierarchy ul ul::before{
+	content: '';
+	position: absolute; top: 0; left: 50%;
+	border-left: 1px solid #ccc;
+	width: 0; height: 20px;
+}
+
+.hierarchy li a{
+	border: 1px solid #ccc;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #666;
+	font-family: arial, verdana, tahoma;
+	font-size: 11px;
+	display: inline-block;
+	
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+/*hover effects*/
+/*hover effect the the lineage of the element also*/
+.hierarchy li a:hover, .hierarchy li a:hover+ul li a {
+	background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
+}
+/*Connector styles on hover*/
+.hierarchy li a:hover+ul li::after, 
+.hierarchy li a:hover+ul li::before, 
+.hierarchy li a:hover+ul::before, 
+.hierarchy li a:hover+ul ul::before{
+	border-color:  #94a0b4;
+}
